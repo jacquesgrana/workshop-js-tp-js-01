@@ -1,0 +1,11 @@
+#container_block {
+    margin: auto;
+    margin-top: 4rem;
+    width: 60rem;
+    border: 3px solid black;
+}
+
+#list_block {
+    border: 3px solid black;
+    min-height: 3rem;
+}
