@@ -28,7 +28,11 @@ function updateDivUserList() {
 
         users.forEach(u => {
             cpt++;
-            html += "<p class='row ml-3 mt-2' ><span class='col-4'>" + cpt + "</span><span class='col-4'>" + u.name + "</span><span class='col-4'>" + u.password + "</span></p>";
+            let bg = " bg_perso";
+            if(cpt%2 != 0) {
+                bg = ""
+            }
+            html += "<p class='row ml-3 mr-3 pt-1 pb-1" + bg + "' ><span class='col-4'>" + cpt + "</span><span class='col-4'>" + u.name + "</span><span class='col-3'>" + u.password + "</span></p>";
         })
 
         console.log("html : " + html);
